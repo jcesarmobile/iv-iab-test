@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>About</ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button icon-only (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </ion-button>
+      <ion-button icon-only (click)="openIAB()">
+        <ion-icon name="browsers"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center ion-padding">
+  <img src="assets/img/appicon.svg" />
+  <h1>Ionic Identity Vault</h1>
+  <h2>Demo Application</h2>
+  <h3>Identity Vault Version 3.4.8</h3>
+  <h3>Current User: {{ user?.email }}</h3>
+  <h4>Authentication Mode: {{ authMode }}</h4>
+  <h4>Biometrics Type: {{ bioType }}</h4>
+</ion-content>
