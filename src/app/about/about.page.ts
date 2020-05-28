@@ -41,4 +41,16 @@ export class AboutPage {
     ('http://www.google.com', '_blank');
     browser.show();
   }
+
+  openIAB2() {
+    const browser = this.browser.create
+    ('http://www.google.com', '_blank', 'presentationstyle=pagesheet');
+    browser.show();
+  }
+
+  openIAB3() {
+    const browser = this.browser.create
+    ('http://www.google.com', '_blank', 'presentationstyle=formsheet');
+    browser.show();
+  }
 }
